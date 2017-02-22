@@ -45,9 +45,10 @@ public class CartResources {
         return cartService.getCartById(cartId);
     }
 
-    @RequestMapping(value = "/add/{productId}", method = RequestMethod.PUT)
+    @RequestMapping(value = "/add/{productId}/{quantity}", method = RequestMethod.PUT)
     @ResponseStatus(value = HttpStatus.NO_CONTENT)
-    public void addItem(@PathVariable(value = "productId") int productId, @AuthenticationPrincipal User activeUser) {
+    public void addItem(@PathVariable(value = "productId") int productId,
+            @PathVariable(value = "quantity") int quantity, @AuthenticationPrincipal User activeUser) {
 
         Customer customer = customerService.getCustomerByUsername(activeUser.getUsername());
         Cart cart = customer.getCart();
@@ -57,7 +58,7 @@ public class CartResources {
         for (int i = 0; i < cartItems.size(); i++) {
             if (product.getProductId() == cartItems.get(i).getProduct().getProductId()) {
                 CartItem cartItem = cartItems.get(i);
-                cartItem.setQuantity(cartItem.getQuantity() + 1);
+                cartItem.setQuantity(cartItem.getQuantity() + quantity);
                 cartItem.setTotalPrice(product.getProductPrice() * cartItem.getQuantity());
                 cartItemService.addCartItem(cartItem);
 
@@ -68,7 +69,7 @@ public class CartResources {
         //this executes only if no matching elements were found in the previous loop
         CartItem cartItem = new CartItem();
         cartItem.setProduct(product);
-        cartItem.setQuantity(1);
+        cartItem.setQuantity(quantity);
         cartItem.setTotalPrice(product.getProductPrice() * cartItem.getQuantity());
         cartItem.setCart(cart);
         cartItemService.addCartItem(cartItem);

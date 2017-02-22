@@ -22,8 +22,8 @@ cartApp.controller("cartCtrl", function ($scope, $http) {
     };
 
     $scope.addToCart = function (productId) {
-        $http.put('/verdes-store/rest/cart/add/' + productId).success(function () {
-            alert("Product successfully added to the cart!")
+        $http.put('/verdes-store/rest/cart/add/' + productId+'/'+ $scope.inputVal).success(function () {
+            alert("Product successfully added to the cart!, quantity: " + $scope.inputVal)
         });
     };
 

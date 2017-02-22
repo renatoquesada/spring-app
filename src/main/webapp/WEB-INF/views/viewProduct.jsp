@@ -30,6 +30,12 @@
                     <p>
                         <strong>Condition</strong> : ${product.productCondition}
                     </p>
+
+                    <p>
+                        <strong>Quantity</strong> :
+                        <input id="Text1" type="text"  runat="server" ng-model="inputVal" ng-init="inputVal='Please input quantity'">
+                    </p>
+
                     <h4>${product.productPrice} USD</h4>
 
                     <br>
