@@ -27,7 +27,7 @@ public class Product implements Serializable {
     private String productCategory;
     private String productDescription;
 
-    @Min(value = 0, message = "The product price must no be less then zero.")
+    @Min(value = 0, message = "The product price must not be less then zero.")
     private double productPrice;
     private String productCondition;
     private String productStatus;
