@@ -5,7 +5,7 @@ import com.verdesorganicos.store.model.Cart;
 import java.io.IOException;
 
 /**
- * Created by Le on 1/11/2016.
+ * Created by renato on 1/11/2016.
  */
 public interface CartDao {
 

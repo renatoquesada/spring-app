@@ -4,7 +4,7 @@ import com.verdesorganicos.store.model.Cart;
 import com.verdesorganicos.store.model.CartItem;
 
 /**
- * Created by Le on 1/25/2016.
+ * Created by renato on 1/25/2016.
  */
 public interface CartItemService {
 

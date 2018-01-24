@@ -5,7 +5,7 @@ import com.verdesorganicos.store.model.Product;
 import java.util.List;
 
 /**
- * Created by Le on 1/6/2016.
+ * Created by renato on 1/6/2016.
  */
 public interface ProductDao {
 
