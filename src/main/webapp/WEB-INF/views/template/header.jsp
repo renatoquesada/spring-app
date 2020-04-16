@@ -57,25 +57,25 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<c:url value="/" /> ">Verdes Organicos Store</a>
+                    <a class="navbar-brand" href="<c:url value="/" /> ">Verdes Organicos</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="<c:url value="/" /> ">Home</a></li>
-                        <li><a href="<c:url value="/product/productList/all" />">Products</a></li>
-                        <li><a href="<c:url value="/about" />">About Us</a></li>
+                        <li><a href="<c:url value="/" /> ">Principal</a></li>
+                        <li><a href="<c:url value="/product/productList/all" />">Productos</a></li>
+                        <li><a href="<c:url value="/about" />">Quienes somos</a></li>
                     </ul>
                     <ul class="nav navbar-nav pull-right">
                         <c:if test="${pageContext.request.userPrincipal.name != null}">
                             <li><a>Welcome: ${pageContext.request.userPrincipal.name}</a></li>
-                            <li><a href="<c:url value="/j_spring_security_logout" />">Logout</a></li>
+                            <li><a href="<c:url value="/j_spring_security_logout" />">Salir</a></li>
                             <c:if test="${pageContext.request.userPrincipal.name != 'admin'}">
                                 <li><a href="<c:url value="/customer/cart" />">Cart</a></li>
                             </c:if>
                         </c:if>
                         <c:if test="${pageContext.request.userPrincipal.name  == null}">
-                            <li><a href="<c:url value="/login/" />">Login</a></li>
-                            <li><a href="<c:url value="/register" />">Register</a></li>
+                            <li><a href="<c:url value="/login/" />">Entrar como usuario existente</a></li>
+                            <li><a href="<c:url value="/register" />">Registro de nuevo usuario</a></li>
                         </c:if>
 
                         <c:if test="${pageContext.request.userPrincipal.name == 'admin'}">
