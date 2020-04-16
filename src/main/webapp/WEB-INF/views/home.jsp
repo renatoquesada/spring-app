@@ -18,10 +18,9 @@
 
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>Welcome to Verdes Organicos Store</h1>
+                    <h1>Bienvenid@ a la tienda virtual de Verdes Org&aacute;nicos</h1>
 
-                    <p>Here you can browse and buy Instruments, Records and music related Accessories. Order Now for
-                        Your Amazing New Kit!</p>
+                    <p>Aqu&iacute; puede encontrar una gran variedad de productos frescos ya sea org&aacute;nicos o en proceso de transici&oacute;n.</p>
 
                 </div>
             </div>
@@ -33,9 +32,10 @@
 
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>Facts You Should Know About Music</h1>
+                    <h1>Cosas que debes saber de Verdes Org&aacute;nicos</h1>
 
-                    <p>Music brings joy, to all of our hearts, It's one of those, emotional arts.</p>
+                    <p>Somos una empresa familiar dedicada a la producci&oacute;n org&aacute;nica desde el 2009.</p>
+                    <p>Contamos con una finca ubicada en el Yas de Para&iacute;so y otra en Puriscal.</p>
 
                 </div>
             </div>
@@ -47,9 +47,10 @@
 
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>It's A Jazz Affair</h1>
+                    <h1>Productos frescos a su casa!</h1>
 
-                    <p>Through ups and downs, Somehow I manage to survive in life.</p>
+                    <p>Haga su pedido en l&iacute;nea y con gusto se lo llevaremos a su casa.</p>
+                    <p>Al momento de la entrega se realiza la cancelaci&oacute;n ya sea en efectivo, tarjeta de cr&eacute;dito o Sinpe m&oacute;vil.</p>
 
                 </div>
             </div>
