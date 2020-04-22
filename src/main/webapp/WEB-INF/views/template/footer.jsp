@@ -2,7 +2,7 @@
 <footer>
     <p class="pull-right"><a href="#">Ir arriba</a></p>
 
-    <p>&copy; 2020 Company, Inc. &middot; <a href="#">Privacidad</a> &middot; <a href="#">Terminos</a></p>
+    <p>&copy; 2020 Registrado. &middot; <a href="#">Privacidad</a> &middot; <a href="#">Terminos</a></p>
 </footer>
 </div>
 
