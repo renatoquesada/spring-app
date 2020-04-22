@@ -67,10 +67,10 @@
                     </ul>
                     <ul class="nav navbar-nav pull-right">
                         <c:if test="${pageContext.request.userPrincipal.name != null}">
-                            <li><a>Welcome: ${pageContext.request.userPrincipal.name}</a></li>
+                            <li><a>Bienvenido: ${pageContext.request.userPrincipal.name}</a></li>
                             <li><a href="<c:url value="/j_spring_security_logout" />">Salir</a></li>
                             <c:if test="${pageContext.request.userPrincipal.name != 'admin'}">
-                                <li><a href="<c:url value="/customer/cart" />">Cart</a></li>
+                                <li><a href="<c:url value="/customer/cart" />">Ir a carrito</a></li>
                             </c:if>
                         </c:if>
                         <c:if test="${pageContext.request.userPrincipal.name  == null}">
