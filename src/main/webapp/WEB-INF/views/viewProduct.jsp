@@ -6,9 +6,9 @@
 <div class="container-wrapper">
     <div class="container">
         <div class="page-header">
-            <h1>Product Detail</h1>
+            <h1>Detalle del producto</h1>
 
-            <p class="lead">Here is the detail information of the product!</p>
+            <p class="lead">Ingrese la cantidad y de click en Ordenar</p>
         </div>
 
         <div class="container" ng-app="cartApp">
@@ -22,21 +22,21 @@
                     <h3>${product.productName}</h3>
                     <p>${product.productDescription}</p>
                     <p>
-                        <strong>Manufacturer</strong> : ${product.productManufacturer}
+                        <strong>Proveedor</strong> : ${product.productManufacturer}
                     </p>
                     <p>
-                        <strong>Category</strong> : ${product.productCategory}
+                        <strong>Categor&iacute;a</strong> : ${product.productCategory}
                     </p>
                     <p>
-                        <strong>Condition</strong> : ${product.productCondition}
+                        <strong>Condici&oacute;n</strong> : ${product.productCondition}
                     </p>
 
                     <p>
-                        <strong>Quantity</strong> :
-                        <input id="Text1" type="text"  runat="server" ng-model="inputVal" ng-init="inputVal='Please input quantity'">
+                        <strong>Cantidad</strong> :
+                        <input id="Text1" type="text"  runat="server" ng-model="inputVal" ng-init="inputVal='***Ingrese la cantidad'">
                     </p>
 
-                    <h4>${product.productPrice} USD</h4>
+                    <h4>&#8353;${product.productPrice}</h4>
 
                     <br>
 
@@ -49,22 +49,21 @@
                     <c:if test="${pageContext.request.userPrincipal.name != null}">
 
                         <p ng-controller="cartCtrl">
-                            <a href="<c:url value="${url}"/>/all" class="btn btn-default">Back</a>
+                            <a href="<c:url value="${url}"/>/all" class="btn btn-default">Atr&aacute;s</a>
                             <a href="#" class="btn btn-warning btn-large"
                                ng-click="addToCart('${product.productId}')"><span
-                                    class="glyphicon glyphicon-shopping-cart"></span>Order
-                                Now</a>
+                                    class="glyphicon glyphicon-shopping-cart"></span>Agregar a carrito</a>
                             <a href="<spring:url value="/customer/cart" />"
-                               class="btn btn-default"><span class="glyphicon glyphicon-hand-right"></span>View Cart</a>
+                               class="btn btn-default"><span class="glyphicon glyphicon-hand-right"></span>Ver carrito</a>
                         </p>
 
                     </c:if>
 
                     <c:if test="${pageContext.request.userPrincipal.name == null}">
 
-                        To checkout products please proceeed to login.
+                        Para hacer pedidos por favor entrar como usuario registrado
                         <a href="<spring:url value="/login" />"
-                           class="btn btn-default"><span class="glyphicon glyphicon-hand-right"></span>Login</a>
+                           class="btn btn-default"><span class="glyphicon glyphicon-hand-right"></span>Ingresar</a>
 
                     </c:if>
 
