@@ -5,52 +5,52 @@
 <div class="container-wrapper">
     <div class="container">
         <div class="page-header">
-            <h1>Customer</h1>
+            <h1>Cliente</h1>
 
-            <p class="lead">Customer Details</p>
+            <p class="lead">Detalles del cliente</p>
         </div>
 
         <form:form commandName="order" class="form-horizaontal">
 
-        <h3>Shipping Address</h3>
+        <h3>Direcci&oacute;n de entrega</h3>
 
         <div class="form-group">
-            <label for="shippingStreet">Street Name</label>
+            <label for="shippingStreet">Detalle de direcci&oacute;n</label>
             <form:input path="cart.customer.shippingAddress.streetName" id="shippingStreet" class="form-Control"/>
         </div>
 
         <div class="form-group">
-            <label for="shippingApartmentNumber">Apartment Number</label>
+            <label for="shippingApartmentNumber">N&uacute;mero de casa o apartamento</label>
             <form:input path="cart.customer.shippingAddress.apartmentNumber" id="shippingApartmentNumber"
                         class="form-Control"/>
         </div>
 
         <div class="form-group">
-            <label for="shippingCity">City</label>
+            <label for="shippingCity">Distrito</label>
             <form:input path="cart.customer.shippingAddress.city" id="shippingCity" class="form-Control"/>
         </div>
 
         <div class="form-group">
-            <label for="shippingState">State</label>
+            <label for="shippingState">Provincia</label>
             <form:input path="cart.customer.shippingAddress.state" id="shippingState" class="form-Control"/>
         </div>
 
         <div class="form-group">
-            <label for="shippingCountry">Country</label>
+            <label for="shippingCountry">Pa&iacute;s</label>
             <form:input path="cart.customer.shippingAddress.country" id="shippingCountry" class="form-Control"/>
         </div>
 
         <div class="form-group">
-            <label for="shippingZip">Zipcode</label>
+            <label for="shippingZip">C&oacute;digo postal</label>
             <form:input path="cart.customer.shippingAddress.zipCode" id="shippingZip" class="form-Control"/>
         </div>
 
         <input type="hidden" name="_flowExecutionKey"/>
 
         <br><br>
-        <button class="btn btn-default" name="_eventId_backToCollectCustomerInfo">Back</button>
-        <input type="submit" value="Next" class="btn btn-default" name="_eventId_shippingDetailCollected"/>
-        <button class="btn btn-default" name="_eventId_cancel">Cancel</button>
+        <button class="btn btn-default" name="_eventId_backToCollectCustomerInfo">Atr&aacute;s</button>
+        <input type="submit" value="Continuar con el pedido" class="btn btn-default" name="_eventId_shippingDetailCollected"/>
+        <button class="btn btn-default" name="_eventId_cancel">Cancelar</button>
         </form:form>
 
 

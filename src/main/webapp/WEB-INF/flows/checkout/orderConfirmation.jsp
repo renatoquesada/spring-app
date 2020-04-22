@@ -7,9 +7,9 @@
 <div class="container-wrapper">
     <div class="container">
         <div class="page-header">
-            <h1>Order</h1>
+            <h1>Pedido</h1>
 
-            <p class="lead">Order confirmation</p>
+            <p class="lead">Confirmaci&oacute;n de pedido</p>
         </div>
 
         <div class="container">
@@ -21,12 +21,12 @@
                     <div class="well col-xs-10 col-sm-10 col-md-6 col-xs-offset-1 col-sm-offset-1 co-md-offset-3">
 
                         <div class="text-center">
-                            <h1>Receipt</h1>
+                            <h1>Recibo</h1>
                         </div>
                         <div class="row">
                             <div class="col-xs-6 col-sm-6 col-md-6">
                                 <address>
-                                    <strong>Shipping Address</strong><br>
+                                    <strong>Direcci&oacute;n de env&iacute;o</strong><br>
                                         ${order.cart.customer.shippingAddress.streetName}
                                     <br>
                                         ${order.cart.customer.shippingAddress.apartmentNumber}
@@ -38,7 +38,7 @@
                                 </address>
                             </div>
                             <div class="col-xs-6 col-sm-6 col-md-6 text-right">
-                                <p>Shipping Date: <fmt:formatDate type="date" value="${now}"/></p>
+                                <p>Hora del pedido: <fmt:formatDate type="date" value="${now}"/></p>
                             </div>
                         </div>
 
@@ -47,9 +47,9 @@
                             <table class="table table-hover">
                                 <thead>
                                 <tr>
-                                    <th>Product</th>
-                                    <th>#</th>
-                                    <th class="text-center">Price</th>
+                                    <th>Producto</th>
+                                    <th>Cantidad</th>
+                                    <th class="text-center">Precio</th>
                                     <th class="text-center">Total</th>
                                 </tr>
                                 </thead>
@@ -68,10 +68,10 @@
                                     <td></td>
                                     <td></td>
                                     <td class="text-right">
-                                        <h4><strong>Grand Total: </strong></h4>
+                                        <h4><strong>Total: </strong></h4>
                                     </td>
                                     <td class="text-center text-danger">
-                                        <h4><strong>$ ${order.cart.grandTotal}</strong></h4>
+                                        <h4><strong>&#8353; ${order.cart.grandTotal}</strong></h4>
                                     </td>
                                 </tr>
                                 </tbody>
@@ -81,10 +81,10 @@
                         <input type="hidden" name="_flowExecutionKey"/>
 
                         <br><br>
-                        <button class="btn btn-default" name="_eventId_backToCollectShippingDetail">Back</button>
-                        <input type="submit" value="Submit Order" class="btn btn-default"
+                        <button class="btn btn-default" name="_eventId_backToCollectShippingDetail">Atr&aacute;s</button>
+                        <input type="submit" value="Hacer el pedido" class="btn btn-default"
                                name="_eventId_orderConfirmed"/>
-                        <button class="btn btn-default" name="_eventId_cancel">Cancel</button>
+                        <button class="btn btn-default" name="_eventId_cancel">Cancelar</button>
                     </div>
                 </form:form>
 

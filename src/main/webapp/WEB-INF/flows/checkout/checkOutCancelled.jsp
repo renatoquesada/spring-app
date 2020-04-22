@@ -6,16 +6,16 @@
         <section>
             <div class="jumbotron">
                 <div class="container">
-                    <h1 class="alert alert-danger">Checkout cancelled</h1>
+                    <h1 class="alert alert-danger">Proceso cancelado</h1>
 
-                    <p>Your checkout process is cancelled. You may continue shopping.</p>
+                    <p>El proceso de compra fue cancelado. Puede continuar haciendo sus compras.</p>
                 </div>
             </div>
         </section>
 
         <section class="container">
             <p>
-                <a href="<spring:url value="/product/productList" />" class="btn btn-default">Products</a>
+                <a href="<spring:url value="/product/productList" />" class="btn btn-default">Productos</a>
             </p>
         </section>
 

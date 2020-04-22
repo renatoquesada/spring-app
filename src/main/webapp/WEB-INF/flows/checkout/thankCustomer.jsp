@@ -6,9 +6,9 @@
         <section>
             <div class="jumbotron">
                 <div class="container">
-                    <h1>Thank you for your business!</h1>
+                    <h1>Gracias por su compra!</h1>
 
-                    <p>Your order will be shipped in two business days!</p>
+                    <p>Su orden ser&aacute; entregada el pr&oacute;ximo s&aacute;bado!</p>
                 </div>
             </div>
         </section>

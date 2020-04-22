@@ -6,14 +6,14 @@
         <section>
             <div class="jumbotron">
                 <div class="container">
-                    <h1>Invalid Cart</h1>
+                    <h1>Carrito inv&aacute;lido</h1>
                 </div>
             </div>
         </section>
 
         <section class="container">
             <p>
-                <a href="<spring:url value="/product/productList" />" class="btn btn-default">products</a>
+                <a href="<spring:url value="/product/productList" />" class="btn btn-default">Productos</a>
             </p>
         </section>
 
