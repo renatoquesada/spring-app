@@ -15,7 +15,7 @@
 <div class="container-wrapper">
     <div class="container">
         <div class="page-header">
-            <h1>Todos los productos</h1>
+            <h1>Verdes Org&aacute;nicos: puro org&aacute;nico!</h1>
 
             <p class="lead">Estos son nuestros productos!</p>
         </div>
