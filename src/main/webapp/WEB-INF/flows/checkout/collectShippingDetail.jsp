@@ -26,17 +26,17 @@
         </div>
 
         <div class="form-group">
-            <label for="shippingCity">Distrito</label>
+            <label for="shippingCity">Cant&oacute;n</label>
             <form:input path="cart.customer.shippingAddress.city" id="shippingCity" class="form-Control"/>
         </div>
 
         <div class="form-group">
-            <label for="shippingState">Provincia</label>
+            <label for="shippingState">Distrito</label>
             <form:input path="cart.customer.shippingAddress.state" id="shippingState" class="form-Control"/>
         </div>
 
         <div class="form-group">
-            <label for="shippingCountry">Pa&iacute;s</label>
+            <label for="shippingCountry">Provincia</label>
             <form:input path="cart.customer.shippingAddress.country" id="shippingCountry" class="form-Control"/>
         </div>
 
