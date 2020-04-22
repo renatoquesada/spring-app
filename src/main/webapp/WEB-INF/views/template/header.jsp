@@ -74,8 +74,8 @@
                             </c:if>
                         </c:if>
                         <c:if test="${pageContext.request.userPrincipal.name  == null}">
-                            <li><a href="<c:url value="/login/" />">Entrar como usuario existente</a></li>
-                            <li><a href="<c:url value="/register" />">Registro de nuevo usuario</a></li>
+                            <li><a href="<c:url value="/login/" />">Usuario existente</a></li>
+                            <li><a href="<c:url value="/register" />">Nuevo usuario</a></li>
                         </c:if>
 
                         <c:if test="${pageContext.request.userPrincipal.name == 'admin'}">
