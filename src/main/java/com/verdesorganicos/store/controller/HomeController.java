@@ -22,11 +22,11 @@ public class HomeController {
                         @RequestParam(value = "logout", required = false) String logout,
                         Model model) {
         if (error != null) {
-            model.addAttribute("error", "Invalid username and password");
+            model.addAttribute("error", "Usuario y password inv&aacute;lido");
         }
 
         if (logout != null) {
-            model.addAttribute("msg", "You have been logged out successfully.");
+            model.addAttribute("msg", "Ha salido exitosamente");
         }
 
         return "login";
