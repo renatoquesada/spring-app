@@ -40,7 +40,7 @@
                     <td>${product.productCondition}</td>
                     <td>&#8353; ${product.productPrice} </td>
                     <td><a href="<spring:url value="/product/viewProduct/${product.productId}" />"
-                    ><span class="glyphicon glyphicon-info-sign"></span></a></td>
+                    ><span class="glyphicon glyphicon-info-sign"></span> Agregar a carrito</a></td>
                 </tr>
             </c:forEach>
         </table>
