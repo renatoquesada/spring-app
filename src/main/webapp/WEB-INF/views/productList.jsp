@@ -26,7 +26,7 @@
                 <th>Imagen</th>
                 <th>Nombre</th>
                 <th>Categor&iacute;a</th>
-                <th>Condici&oacute;n</th>
+                <th>Tipo</th>
                 <th>Precio</th>
                 <th></th>
             </tr>

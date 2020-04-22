@@ -20,17 +20,17 @@
         <div class="form-group">
             <label for="category">Category</label>
             <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category"
-                                                             value="frescos"/>Frescos</label>
+                                                             value="Hortalizas"/>Hortalizas</label>
             <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category"
-                                                             value="miel"/>Miel de Abeja</label>
+                                                             value="Verduras"/>Verduras</label>
             <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category"
-                                                             value="envasados"/>Envasados</label>
+                                                             value="Frutas"/>Frutas</label>
             <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category"
-                                                             value="hongos"/>Hongos</label>
+                                                             value="Germinados"/>Germinados</label>
             <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category"
-                                                             value="ornamentales"/>Ornamentales</label>
+                                                             value="Ornamentales"/>Ornamentales</label>
             <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category"
-                                                             value="medicinales"/>Medicinales</label>
+                                                             value="Medicinales"/>Medicinales</label>
         </div>
 
         <div class="form-group">
@@ -44,11 +44,13 @@
         </div>
 
         <div class="form-group">
-            <label for="condition">Condition</label>
+            <label for="condition">Type</label>
             <label class="checkbox-inline"><form:radiobutton path="productCondition" id="condition"
-                                                             value="new"/>New</label>
+                                                             value="Organico"/>Org&aacute;nico</label>
             <label class="checkbox-inline"><form:radiobutton path="productCondition" id="condition"
-                                                             value="used"/>Used</label>
+                                                             value="En transicion"/>En transici&oacute;n</label>
+            <label class="checkbox-inline"><form:radiobutton path="productCondition" id="condition"
+                                                             value="Tradicional"/>Tradicional</label>
         </div>
 
         <div class="form-group">
