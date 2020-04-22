@@ -15,19 +15,19 @@
 <div class="container-wrapper">
     <div class="container">
         <div class="page-header">
-            <h1>All Products</h1>
+            <h1>Todos los productos</h1>
 
-            <p class="lead">Checkout all the awesome products available now!</p>
+            <p class="lead">Estos son nuestros productos!</p>
         </div>
 
-        <table id="searchTable"  class="table table-striped table-hover">
+        <table id="searchTable"  class="table table-striped table-hover" data-locale="es_CR">
             <thead>
             <tr class="bg-success">
-                <th>Photo Thumb</th>
-                <th>Product Name</th>
-                <th>Category</th>
-                <th>Condition</th>
-                <th>Price</th>
+                <th>Imagen</th>
+                <th>Nombre</th>
+                <th>Categor&iacute;a</th>
+                <th>Condici&oacute;n</th>
+                <th>Precio</th>
                 <th></th>
             </tr>
             </thead>
@@ -38,7 +38,7 @@
                     <td>${product.productName}</td>
                     <td>${product.productCategory}</td>
                     <td>${product.productCondition}</td>
-                    <td>${product.productPrice} USD</td>
+                    <td>&#8353; ${product.productPrice} </td>
                     <td><a href="<spring:url value="/product/viewProduct/${product.productId}" />"
                     ><span class="glyphicon glyphicon-info-sign"></span></a></td>
                 </tr>
